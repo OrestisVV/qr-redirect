@@ -15,7 +15,7 @@ const redirects = {
 
 
 const slug = window.location.hash.replace("#", "").toLowerCase().trim();  
-
+<!-- const slug = window.location.pathname.split("/").filter(Boolean).pop(); -->
 const destination = redirects[slug];
 
 if (destination) {
