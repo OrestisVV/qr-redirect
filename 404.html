@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    const redirects = {
+      "qr1": "https://orestisv.com/chickenontheroad"
+      "qr2": "https://calendly.com/your-link",
+      "card": "https://orestisv.com/card"
+    }
+
+    const slug = window.location.pathname.replace("/", "").toLowerCase().trim();
+    const destination = redirects[slug];
+
+    if (destination) {
+      window.location.replace(destination);
+    } else {
+      window.location.replace("https://orestisv.com");
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
