@@ -1,2 +1,2 @@
 # qr-redirect
-Qr codes redirects. Turn static to dynamic
+Qr codes redirects. Turning static to dynamic
