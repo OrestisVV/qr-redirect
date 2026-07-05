@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+</head>
+<body>
+<script>
+const redirects = {
+  "qr1": "https://calendly.com/your-link",
+  "qr2": "https://orestisv.com/find-your-structure",
+  "qr3": "https://orestisv.com/book-a-session",
+  "qr4": "https://orestisv.com/your-offer-page"
+}
+
+const slug = window.location.pathname.split("/").filter(Boolean).pop();
+const destination = redirects[slug];
+
+if (destination) {
+  window.location.replace(destination);
+} else {
+  window.location.replace("https://orestisv.com");
+}
+</script>
+<noscript>
+  <p>Please enable JavaScript or <a href="https://orestisv.com">click here</a>.</p>
+</noscript>
+</body>
+</html>
