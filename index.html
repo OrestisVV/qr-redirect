@@ -13,7 +13,9 @@ const redirects = {
   "qr4": "https://orestisv.com/your-offer-page"
 }
 
-const slug = window.location.pathname.split("/").filter(Boolean).pop();
+
+const slug = window.location.hash.replace("#", "").toLowerCase().trim();  
+
 const destination = redirects[slug];
 
 if (destination) {
