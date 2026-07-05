@@ -12,11 +12,10 @@ const redirects = {
   "qr3": "https://orestisv.com/book-a-session",
   "qr4": "https://orestisv.com/your-offer-page"
 }
-
-
-const slug = window.location.hash.replace("#", "").toLowerCase().trim();  
-<!-- const slug = window.location.pathname.split("/").filter(Boolean).pop(); -->
+ 
+<!-- const slug = window.location.pathname.split("/").filter(Boolean).pop().toLowerCase().trim(); -->
 const destination = redirects[slug];
+const slug = window.location.hash.replace("#", "").toLowerCase().trim(); 
 
 if (destination) {
   window.location.replace(destination);
